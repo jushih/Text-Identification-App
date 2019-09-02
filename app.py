@@ -22,7 +22,7 @@ model.load_weights('models/model_weights.h5')
 model._make_predict_function()
 
 
-app = Flask(__name__, static_folder='/Users/julieshih/workspace/chinese/data',root_path='src/')
+app = Flask(__name__, static_folder='/Users/julieshih/workspace/Text-Identification-App/data',root_path='src/')
 
 # define apps home page
 @app.route('/')
@@ -59,7 +59,7 @@ def upload():
 
 @app.route('/src/uploads/img/<filename>')
 def send_image(filename):
-    return send_from_directory('/Users/julieshih/workspace/chinese/src/uploads/img/', filename)
+    return send_from_directory('/Users/julieshih/workspace/Text-Identification-App/src/uploads/img/', filename)
 
 
 if __name__ == "__main__":

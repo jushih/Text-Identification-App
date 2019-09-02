@@ -147,7 +147,7 @@ def get_files(path):
 # given a character, return sample images of that character
 def sample_characters(character):
 
-    path = '/Users/julieshih/workspace/chinese/data'
+    path = '/Users/julieshih/workspace/Text-Identification-App/data'
     folders = get_folders(path)
     files = get_files(path) 
     # save paths to csv and load csv instead of crawling each time
